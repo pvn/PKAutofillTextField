@@ -1,0 +1,16 @@
+PODS:
+  - PKAutofillTextField (0.1.0)
+
+DEPENDENCIES:
+  - PKAutofillTextField (from `../`)
+
+EXTERNAL SOURCES:
+  PKAutofillTextField:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PKAutofillTextField: c5162c8b6bc4821d6a6c73391104c7b718eff9fd
+
+PODFILE CHECKSUM: 28876996fd9ad64cbd24dd31aff0f1b5b7928c05
+
+COCOAPODS: 1.5.3

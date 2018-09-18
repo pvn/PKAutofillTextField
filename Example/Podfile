@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PKAutofillTextField_Example' do
+  pod 'PKAutofillTextField', :path => '../'
+
+  target 'PKAutofillTextField_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
