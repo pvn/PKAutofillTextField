@@ -14,6 +14,12 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8D1C17B25ADF79A28194BB74 /* Pods_PKAutofillTextField_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5F80AF852C07CB20091E08B /* Pods_PKAutofillTextField_Tests.framework */; };
+		8F1FCFD621582E0600AC5E42 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1FCFD521582E0600AC5E42 /* send.png */; };
+		8F1FCFE5215BF6FF00AC5E42 /* PKDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1FCFE4215BF6FF00AC5E42 /* PKDataManager.swift */; };
+		8F1FCFE7215C20CA00AC5E42 /* PKPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1FCFE6215C20CA00AC5E42 /* PKPopover.swift */; };
+		8FCEFA5121519AED00492BF6 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8FCEFA4E21519AED00492BF6 /* .gitkeep */; };
+		8FCEFA532152A7B700492BF6 /* PKAutofillTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCEFA522152A7B700492BF6 /* PKAutofillTextField.swift */; };
+		8FCEFA552152B4E300492BF6 /* PKAutoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCEFA542152B4E300492BF6 /* PKAutoListViewController.swift */; };
 		F3F1621AFF6FB8A71F5E29C0 /* Pods_PKAutofillTextField_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7992A5B27733D6E086B307 /* Pods_PKAutofillTextField_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +47,12 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7B5B6D859E1EDE4889DDF3C6 /* PKAutofillTextField.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PKAutofillTextField.podspec; path = ../PKAutofillTextField.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		88D31ACBB6FA55CE6E036775 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8F1FCFD521582E0600AC5E42 /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
+		8F1FCFE4215BF6FF00AC5E42 /* PKDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKDataManager.swift; sourceTree = "<group>"; };
+		8F1FCFE6215C20CA00AC5E42 /* PKPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKPopover.swift; sourceTree = "<group>"; };
+		8FCEFA4E21519AED00492BF6 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8FCEFA522152A7B700492BF6 /* PKAutofillTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKAutofillTextField.swift; sourceTree = "<group>"; };
+		8FCEFA542152B4E300492BF6 /* PKAutoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKAutoListViewController.swift; sourceTree = "<group>"; };
 		A5F80AF852C07CB20091E08B /* Pods_PKAutofillTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PKAutofillTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2228338E01007AD29A084A0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CC7992A5B27733D6E086B307 /* Pods_PKAutofillTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PKAutofillTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +93,8 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				8F1FCFD521582E0600AC5E42 /* send.png */,
+				8FCEFA4921519AED00492BF6 /* PKAutofillTextField */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for PKAutofillTextField */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -148,6 +162,35 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		8FCEFA4921519AED00492BF6 /* PKAutofillTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8FCEFA4A21519AED00492BF6 /* Classes */,
+				8FCEFA4D21519AED00492BF6 /* Assets */,
+			);
+			name = PKAutofillTextField;
+			path = ../PKAutofillTextField;
+			sourceTree = "<group>";
+		};
+		8FCEFA4A21519AED00492BF6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8F1FCFE6215C20CA00AC5E42 /* PKPopover.swift */,
+				8FCEFA522152A7B700492BF6 /* PKAutofillTextField.swift */,
+				8FCEFA542152B4E300492BF6 /* PKAutoListViewController.swift */,
+				8F1FCFE4215BF6FF00AC5E42 /* PKDataManager.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8FCEFA4D21519AED00492BF6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8FCEFA4E21519AED00492BF6 /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		EAF9B4F4B31C6E6F69599B6E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,7 +250,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -246,7 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				8F1FCFD621582E0600AC5E42 /* send.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				8FCEFA5121519AED00492BF6 /* .gitkeep in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +379,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1FCFE5215BF6FF00AC5E42 /* PKDataManager.swift in Sources */,
+				8FCEFA532152A7B700492BF6 /* PKAutofillTextField.swift in Sources */,
+				8F1FCFE7215C20CA00AC5E42 /* PKPopover.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				8FCEFA552152B4E300492BF6 /* PKAutoListViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,12 +438,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -442,12 +493,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -488,6 +541,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -503,6 +557,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
