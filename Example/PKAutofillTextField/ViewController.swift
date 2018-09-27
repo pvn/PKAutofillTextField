@@ -30,7 +30,7 @@ class ViewController: UIViewController, PKAutofillTextFieldDelegate {
         textField = PKAutofillTextField.init(frame: CGRect.init(x: 5, y: 400, width: 400, height: 50), presenting: self, keyIdentifier: "server", delegate: self, buttonTitle: "show")
         
         // some default values for textfield
-        textField!.defaultValues(values: ["https://google.com", "https://news.com", "https://weather.com"])
+        textField!.defaultValues(values: ["https://google.com", "https://weather.com"])
         
         // add textfield to view
         self.view.addSubview(textField!)
