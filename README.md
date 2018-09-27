@@ -31,18 +31,32 @@ cp -rf PKAutofillTextField/Classes/ <to_your_project_dir>
 
 ## Usage
 ```swift
-        // instantiate PKAutofillTextField
-        // presenting: self
-        // keyIdentifier: unique identifier for textfield
-        // buttonTitle: to show the button title on textfield
+
+		// import the PKAutofillTextField
+		import PKAutofillTextField
+
+		class ViewController: UIViewController, PKAutofillTextFieldDelegate {
+
+			override func viewDidLoad() {
+        		// instantiate PKAutofillTextField
+        		// presenting: self
+        		// keyIdentifier: unique identifier for textfield
+        		// buttonTitle: to show the button title on textfield
         
-        let textField = PKAutofillTextField.init(frame: CGRect.init(x: 5, y: 400, width: 400, height: 50), presenting: self, keyIdentifier: "server", delegate: self, buttonTitle: "show")
+        		let textField = PKAutofillTextField.init(frame: CGRect.init(x: 5, y: 400, width: 400, height: 50), presenting: self, keyIdentifier: "server", delegate: self, buttonTitle: "show")
         
-        // some default values for textfield
-        textField!.defaultValues(values: ["https://google.com", "https://weather.com"])
+        		// some default values for textfield
+        		textField.defaultValues(values: ["https://google.com", "https://weather.com"])
         
-        // add textfield to view
-        self.view.addSubview(textField!)
+        		// add textfield to view
+        		self.view.addSubview(textField)
+    		}
+
+    		// callback methods of PKAutofillTextFieldDelegate
+    		func selectedValue(value: String) {
+        		//implementation goes here after selecting the value from lists
+    		}
+    	}
 ```
 
 ## Example

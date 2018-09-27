@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PKAutofillTextField'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Smart textfield holds existing inputs'
   s.description      = 'Smart textfield holds existing inputs. E.g You do not want to enter server address again by typing than selecting from existing inputs'
   #TODO: 'need to hande CATransition issue while deleting all the items'
