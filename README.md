@@ -11,14 +11,7 @@
 * Store default values without giving input manually, just set those values while intializing
 * Ability to delete records
 
-**Demo:**
 <img src="./iphone_demo.gif" width="300" alt="Screenshot" />
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -36,7 +29,7 @@ Copy the entire `PKSecurePin` folder which contains two swift files and add to y
 cp -rf PKAutofillTextField/Classes/ <to_your_project_dir>
 ```
 
-# Usage
+## Usage
 ```swift
         // instantiate PKAutofillTextField
         // presenting: self
@@ -51,6 +44,10 @@ cp -rf PKAutofillTextField/Classes/ <to_your_project_dir>
         // add textfield to view
         self.view.addSubview(textField!)
 ```
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Author
 
