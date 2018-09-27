@@ -60,8 +60,8 @@ open class PKAutoListViewController:UITableViewController {
     
     private func deleteRow(_ tableView: UITableView, forRowAt indexPath: IndexPath, element: String) {
         items.remove(element)
-        delegate?.removeItem(value: element)
         tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+        delegate?.removeItem(value: element)
     }
     
     

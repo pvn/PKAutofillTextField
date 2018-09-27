@@ -109,6 +109,9 @@ open class PKAutofillTextField: UITextField {
         if (items.count > 0) {
             displayItems()
         }
+        else {
+            self.placeholder = "No records found, start typing"            
+        }
     }
     
     private func cleanup(key: String) {
@@ -127,12 +130,33 @@ extension PKAutofillTextField: PKAutoListViewControllerDelegate {
     
     public func selectedValue(value: String) {
         self.text = value
-        self.listVC?.dismiss(animated: true, completion: nil)
+        dismissPopover(shouldShowKeyboard: false)
         self.autofillTextFieldDelegate?.selectedValue(value: value)
     }
     
     public func removeItem(value: String) {
-        PKDataManager.remove(value, forKey: self.keyIdentifier)
+        let items = datasource()
+        if items.count > 0 {
+            PKDataManager.remove(value, forKey: self.keyIdentifier)
+        }
+        
+        if PKDataManager.isRecordEmpty(forKey: self.keyIdentifier) {
+            dismissPopover(shouldShowKeyboard: true)
+        }
+        
+    }
+    
+    func dismissPopover(shouldShowKeyboard: Bool) {
+        DispatchQueue.main.async {
+            self.listVC?.dismiss(animated: true, completion: nil)
+            if shouldShowKeyboard {
+                self.becomeFirstResponder()
+            }
+            else {
+                self.resignFirstResponder()
+            }
+        }
+        
     }
     
 }
@@ -241,6 +265,11 @@ class PKDataManager {
     
     static func synchronize() {
         defaults.synchronize()
+    }
+    
+    static func isRecordEmpty(forKey key: String) -> Bool {
+        let items = PKDataManager.get(forKey: key)
+        return items.count <= 0
     }
     
     

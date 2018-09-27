@@ -22,8 +22,17 @@ class ViewController: UIViewController, PKAutofillTextFieldDelegate {
         self.view.backgroundColor = UIColor.gray
         // Do any additional setup after loading the view, typically from a nib.
         
+        // instantiate PKAutofillTextField
+        // presenting: self
+        // keyIdentifier: unique identifier for textfield
+        // buttonTitle: to show the button title on textfield
+        
         textField = PKAutofillTextField.init(frame: CGRect.init(x: 5, y: 400, width: 400, height: 50), presenting: self, keyIdentifier: "server", delegate: self, buttonTitle: "show")
-        textField!.defaultValues(values: ["http://10.0.0.0", "http://10.0.0.1", "http://10.0.0.2", "http://10.0.0.3"])
+        
+        // some default values for textfield
+        textField!.defaultValues(values: ["https://google.com", "https://news.com", "https://weather.com"])
+        
+        // add textfield to view
         self.view.addSubview(textField!)
         
     }
