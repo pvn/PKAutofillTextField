@@ -51,7 +51,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Author
 
-pvn, praveen.sunsetpoint@gmail.com
+Praveen Kumar Shrivastav, composetopraveen@gmail.com
 
 ## License
 
