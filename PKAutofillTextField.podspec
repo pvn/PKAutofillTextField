@@ -8,35 +8,18 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PKAutofillTextField'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of PKAutofillTextField.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
+  s.version          = '1.0'
+  s.summary          = 'Smart textfield which holds existing inputs. For e.g You do not want to enter server address again by typing rather than selecting from existing inputs which you entered.'
+  s.description      = 'Smart textfield which holds existing inputs. For e.g You do not want to enter server address again by typing rather than selecting from existing inputs which you entered.'
+  #TODO: 'need to hande CATransition issue while deleting all the items'
   s.homepage         = 'https://github.com/pvn/PKAutofillTextField'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'pvn' => 'praveen.sunsetpoint@gmail.com' }
+  s.author           = { 'Praveen Kumar Shrivastav' => 'composetopraveen@gmail.com' }
   s.source           = { :git => 'https://github.com/pvn/PKAutofillTextField.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
+  s.social_media_url = 'https://twitter.com/praveen_tech'
+  s.ios.deployment_target = '10.0'
   s.source_files = 'PKAutofillTextField/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'PKAutofillTextField' => ['PKAutofillTextField/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.swift_version = '4.0'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
