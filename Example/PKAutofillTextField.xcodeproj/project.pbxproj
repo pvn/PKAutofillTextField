@@ -14,7 +14,6 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8D1C17B25ADF79A28194BB74 /* Pods_PKAutofillTextField_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5F80AF852C07CB20091E08B /* Pods_PKAutofillTextField_Tests.framework */; };
-		8F1FCFD621582E0600AC5E42 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1FCFD521582E0600AC5E42 /* send.png */; };
 		8FCEFA5121519AED00492BF6 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8FCEFA4E21519AED00492BF6 /* .gitkeep */; };
 		8FCEFA532152A7B700492BF6 /* PKAutofillTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCEFA522152A7B700492BF6 /* PKAutofillTextField.swift */; };
 		8FCEFA552152B4E300492BF6 /* PKAutoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCEFA542152B4E300492BF6 /* PKAutoListViewController.swift */; };
@@ -45,7 +44,6 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7B5B6D859E1EDE4889DDF3C6 /* PKAutofillTextField.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PKAutofillTextField.podspec; path = ../PKAutofillTextField.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		88D31ACBB6FA55CE6E036775 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		8F1FCFD521582E0600AC5E42 /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
 		8FCEFA4E21519AED00492BF6 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		8FCEFA522152A7B700492BF6 /* PKAutofillTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKAutofillTextField.swift; sourceTree = "<group>"; };
 		8FCEFA542152B4E300492BF6 /* PKAutoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKAutoListViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				8F1FCFD521582E0600AC5E42 /* send.png */,
 				8FCEFA4921519AED00492BF6 /* PKAutofillTextField */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for PKAutofillTextField */,
@@ -283,7 +280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				8F1FCFD621582E0600AC5E42 /* send.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				8FCEFA5121519AED00492BF6 /* .gitkeep in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
