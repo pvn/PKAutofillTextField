@@ -15,8 +15,6 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8D1C17B25ADF79A28194BB74 /* Pods_PKAutofillTextField_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5F80AF852C07CB20091E08B /* Pods_PKAutofillTextField_Tests.framework */; };
 		8F1FCFD621582E0600AC5E42 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1FCFD521582E0600AC5E42 /* send.png */; };
-		8F1FCFE5215BF6FF00AC5E42 /* PKDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1FCFE4215BF6FF00AC5E42 /* PKDataManager.swift */; };
-		8F1FCFE7215C20CA00AC5E42 /* PKPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1FCFE6215C20CA00AC5E42 /* PKPopover.swift */; };
 		8FCEFA5121519AED00492BF6 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8FCEFA4E21519AED00492BF6 /* .gitkeep */; };
 		8FCEFA532152A7B700492BF6 /* PKAutofillTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCEFA522152A7B700492BF6 /* PKAutofillTextField.swift */; };
 		8FCEFA552152B4E300492BF6 /* PKAutoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCEFA542152B4E300492BF6 /* PKAutoListViewController.swift */; };
@@ -48,8 +46,6 @@
 		7B5B6D859E1EDE4889DDF3C6 /* PKAutofillTextField.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PKAutofillTextField.podspec; path = ../PKAutofillTextField.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		88D31ACBB6FA55CE6E036775 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8F1FCFD521582E0600AC5E42 /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
-		8F1FCFE4215BF6FF00AC5E42 /* PKDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKDataManager.swift; sourceTree = "<group>"; };
-		8F1FCFE6215C20CA00AC5E42 /* PKPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKPopover.swift; sourceTree = "<group>"; };
 		8FCEFA4E21519AED00492BF6 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		8FCEFA522152A7B700492BF6 /* PKAutofillTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKAutofillTextField.swift; sourceTree = "<group>"; };
 		8FCEFA542152B4E300492BF6 /* PKAutoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKAutoListViewController.swift; sourceTree = "<group>"; };
@@ -175,10 +171,8 @@
 		8FCEFA4A21519AED00492BF6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8F1FCFE6215C20CA00AC5E42 /* PKPopover.swift */,
 				8FCEFA522152A7B700492BF6 /* PKAutofillTextField.swift */,
 				8FCEFA542152B4E300492BF6 /* PKAutoListViewController.swift */,
-				8F1FCFE4215BF6FF00AC5E42 /* PKDataManager.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -379,9 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F1FCFE5215BF6FF00AC5E42 /* PKDataManager.swift in Sources */,
 				8FCEFA532152A7B700492BF6 /* PKAutofillTextField.swift in Sources */,
-				8F1FCFE7215C20CA00AC5E42 /* PKPopover.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				8FCEFA552152B4E300492BF6 /* PKAutoListViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
