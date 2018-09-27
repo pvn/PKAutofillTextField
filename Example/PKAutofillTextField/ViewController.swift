@@ -10,10 +10,6 @@ import UIKit
 
 class ViewController: UIViewController, PKAutofillTextFieldDelegate {
     
-    func selectedValue(value: String) {
-        print("Selected value: \(value)")
-    }
-    
     var textField: PKAutofillTextField?
     
     override func viewDidLoad() {
@@ -35,6 +31,12 @@ class ViewController: UIViewController, PKAutofillTextFieldDelegate {
         // add textfield to view
         self.view.addSubview(textField!)
         
+    }
+    
+    // PKAutofillTextFieldDelegate methods
+    // callback methods after selecting value from lists
+    func selectedValue(value: String) {
+        // implementation goes here after selecting value from lists
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
